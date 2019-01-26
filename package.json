@@ -1,0 +1,20 @@
+{
+  "name": "cypress-helloworld",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/cypress open",
+    "test": "cypress run --record --key 13fd5668-fbcd-485b-abaf-d961716a2003"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^3.1.4",
+    "cypress-cucumber-preprocessor": "^1.9.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
