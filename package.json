@@ -5,16 +5,20 @@
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/.bin/cypress open",
-    "test": "cypress run --record --key 13fd5668-fbcd-485b-abaf-d961716a2003"
+    "test": "cypress run --record --key 13fd5668-fbcd-485b-abaf-d961716a2003",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cypress": "^3.1.4",
-    "cypress-cucumber-preprocessor": "^1.9.1"
+    "cypress-cucumber-preprocessor": "^1.9.1",
+    "snyk": "^1.316.1"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
-  }
+  },
+  "snyk": true
 }
